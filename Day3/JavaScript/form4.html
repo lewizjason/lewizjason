@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="mystyle.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+
+</head>
+
+<body>
+   
+
+        <div class="card">
+            <header class="header">
+                <div class="card-header">Login</div>
+            </header>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input id="username" type="text" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input id="password" type="password" class="form-control" />
+                    <p>Invalid username or password</p>
+                </div>
+
+            </div>
+            <table>
+                <tr>
+                    <td>
+
+                    </td>
+
+                    <td class="login-footer">
+                        <div class="card-footer text-muted">
+                            <button>Login</button>
+                        </div>
+                    </td>
+
+  
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("p").fadeOut(2000);;
+            });
+        });
+
+    </script>
+</body>
+
+
+</html>

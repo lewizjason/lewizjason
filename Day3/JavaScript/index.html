@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>JavaScript</title>
+    </head>
+        <style>
+
+        </style>
+        <body onload="Welcome()">
+            <h1>Hello World</h1>
+            <button onclick="alert('Button Clicked')">Click Me</button>
+            <button onclick="alert(123)">Click Me 123</button>
+            <button onclick="addNumbers()">Button 3</button>
+            <button onclick="addNumbersWithParameters()">Add with Parameter</button>
+            
+
+            <script>
+                function addNumbers () {
+                    var firstNumber = 9;
+                    var secondNumber = 10;
+                    var sum = firstNumber + secondNumber +100;
+                    alert(sum);
+                }
+
+                function addNumbersWithParameters (firstNumber, secondNumber) {
+                    var sum = firstNumber + secondNumber;
+                    alert(sum);
+                }
+
+                function Welcome () {
+                    alert('Welcome to My Page');
+                }
+
+
+          
+            </script>
+        </body>
+   
+</html>

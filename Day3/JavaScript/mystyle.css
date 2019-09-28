@@ -1,0 +1,30 @@
+body {
+    background-image: url('snow.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-form {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.register-form {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.header {
+    text-align: center;
+}
+
+.register-footer {
+    text-align: left;
+}
+
+.login-footer {
+    text-align: right;
+}
+    

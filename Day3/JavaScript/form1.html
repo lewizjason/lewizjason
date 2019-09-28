@@ -1,0 +1,62 @@
+
+<html>
+        <head>
+            <title>JavaScript Demo</title>
+        </head>
+        <body>
+            <table>
+                <tr>
+                    <td>
+                        <label>First number</label>
+                    </td>
+                    <td>
+                        <input id="txtFirstNumber" type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Second number</label>
+                    </td>
+                    <td>
+                        <input id="txtSecondNumber" type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Answer</label>
+                    </td>
+                    <td>
+                        <input id="txtAnswer" type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button onclick="add()">Add</button>
+                        <button onclick="sub()">Subtract</button>
+                        <button onclick="mul()">Multiply</button>
+                        <button onclick="div()">Divide</button>
+                    </td>
+                </tr>
+            </table>
+    
+            <script>
+                function computeAnswer (operation) {
+                    var firstNum = Number(document.getElementById('txtFirstNumber').value)
+                    var secondNum = Number(document.getElementById('txtSecondNumber').value)
+                    console.log(operation);
+                    console.log(firstNum);
+                    console.log(secondNum);
+               
+               if (operation === 'add') {
+                   console.log('Adding numbers...');
+                   document.getElementById("txtAnswer").value = firstNum+secondNum;
+               }
+               if (operation === 'subtract') {
+                console.log('Subtracting numbers...');
+                   document.getElementById("txtAnswer").value = firstNum-secondNum;
+               }
+               
+            </script>
+        </body>
+    </html>

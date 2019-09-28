@@ -1,0 +1,78 @@
+
+<html>
+        <head>
+            <title>JavaScript Demo</title>
+        </head>
+        <body>
+            <table>
+                <tr>
+                    <td>
+                        <label>First number</label>
+                    </td>
+                    <td>
+                        <input id="txtFirstNumber" type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Second number</label>
+                    </td>
+                    <td>
+                        <input id="txtSecondNumber" type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Answer</label>
+                    </td>
+                    <td>
+                        <input id="txtAnswer" type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button onclick="add()">Add</button>
+                        <button onclick="sub()">Subtract</button>
+                        <button onclick="mul()">Multiply</button>
+                        <button onclick="div()">Divide</button>
+                    </td>
+                </tr>
+            </table>
+    
+            <script>
+                function add () {
+                    var unangNum = Number(document.getElementById('txtFirstNumber').value);
+                    var pangalawangNum = Number(document.getElementById('txtSecondNumber').value);
+                    // var unangNumIntNaSyaNgayon = Number(unangNum); //kapag letter pinasa NaN
+                    // var pangalawangNumIntNaSyaNgayon = Number(pangalawangNum);
+    
+                    document.getElementById('txtAnswer').value = unangNum + pangalawangNum;
+                    console.log(unangNum + pangalawangNum);
+                }
+                // gawa ng button para subtract, multiply, divide
+                // gawan ng function yung subtract, multiply, divide
+
+                function sub () {
+                    var unangNum = Number(document.getElementById('txtFirstNumber').value);
+                    var pangalawangNum = Number(document.getElementById('txtSecondNumber').value);
+                    document.getElementById('txtAnswer').value = unangNum - pangalawangNum;
+                    console.log(unangNum + pangalawangNum);
+                }
+
+                function mul () {
+                    var unangNum = Number(document.getElementById('txtFirstNumber').value);
+                    var pangalawangNum = Number(document.getElementById('txtSecondNumber').value);
+                    document.getElementById('txtAnswer').value = unangNum*pangalawangNum;
+                    console.log(unangNum + pangalawangNum);
+                }
+
+                function div () {
+                    var unangNum = Number(document.getElementById('txtFirstNumber').value);
+                    var pangalawangNum = Number(document.getElementById('txtSecondNumber').value);
+                    document.getElementById('txtAnswer').value = unangNum / pangalawangNum;
+                    console.log(unangNum + pangalawangNum);
+                }
+            </script>
+        </body>
+    </html>
